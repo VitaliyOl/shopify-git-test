@@ -1,0 +1,28 @@
+.image-with-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse {
+    direction: rtl;
+  }
+}
+.section {}
+
+.image-with-text-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  direction: ltr;
+}
+.heading {}
+.image-with-text-body {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
